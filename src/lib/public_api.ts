@@ -87,6 +87,7 @@ export {
    StSubMenuModelSchema
 } from './st-header/st-header.model';
 export { StHeaderModule } from './st-header/st-header.module';
+export { StHeaderDemoModule } from './st-header/st-header-demo/st-header-demo.module';
 
 // Help
 export { StHelpModule } from './st-help/st-help.module';
