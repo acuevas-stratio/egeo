@@ -40,7 +40,6 @@ describe('StHeader component', () => {
 
     comp.appLogoPath = undefined;
     comp.appName = 'Test App';
-    comp.companyName = 'Stratio';
 
     fixture.autoDetectChanges(true);
   });
@@ -49,14 +48,12 @@ describe('StHeader component', () => {
         it('should be init correctly without image', () => {
             let appLabel: HTMLDivElement = fixture.debugElement.query(By.css('.app-label')).nativeElement;
             let appName: HTMLSpanElement = fixture.debugElement.query(By.css('.sth-app-name')).nativeElement;
-            let companyName: HTMLSpanElement = fixture.debugElement.query(By.css('.company-name')).nativeElement;
 
 
             expect(appLabel).toBeDefined();
             expect(appLabel).not.toBeNull();
             expect(comp.showAppName).toBeTruthy();
             expect(appName.textContent).toBe(comp.appName);
-            expect(companyName.textContent).toBe(comp.companyName);
         });
     });
 });

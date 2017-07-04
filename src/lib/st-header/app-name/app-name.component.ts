@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { StDeprecated } from '../../decorators/require-decorators';
 
 @Component({
    selector: 'app-name',
@@ -23,7 +24,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 })
 export class AppNameComponent {
 
-   @Input() companyName: string | undefined = 'STRATIO';
+   @Input() @StDeprecated('STRATIO') companyName: string | undefined;
    @Input() appName: string | undefined;
    @Input() appLogoPath: string | undefined;
    @Input() qaTag: string;

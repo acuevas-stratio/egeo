@@ -76,7 +76,6 @@ let menu: StHeaderModel[] = [
 ];
 
 let appName: string = 'Test App';
-let companyName: string = 'Stratio';
 
 describe('StHeader component', () => {
    beforeEach(async(() => {
@@ -96,7 +95,6 @@ describe('StHeader component', () => {
       comp = fixture.componentInstance;
 
       comp.appName = appName;
-      comp.companyName = companyName;
       comp.userMenu = userMenu;
       comp.menu = menu;
    });

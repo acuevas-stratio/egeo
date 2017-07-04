@@ -26,7 +26,6 @@ import { StHeaderModel, StHeaderUserMenuModel, StSubMenuModel } from './st-heade
 export class StHeaderComponent implements OnInit {
 
    @Input() appName: string | undefined;
-   @Input() companyName: string = 'Stratio';
 
    // TODO: In the future this header can use image or text for now, only use text
    appLogoPath: string | undefined;
